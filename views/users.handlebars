@@ -1,0 +1,12 @@
+<h4>Lista de usuários</h4>
+<a href="/users/insert"><button>Inserir novo</button></a>
+<br><br>
+{{#each users}}
+<hr>
+<div>
+<p>{{this.nome}}, {{this.idade}} anos</p>
+<p>{{this.email}}</p>
+<a href="/users/delete/{{this.id}}"><button>Deletar</button></a>
+</div>
+<br>
+{{/each}}
